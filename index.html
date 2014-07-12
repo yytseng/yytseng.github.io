@@ -4,6 +4,9 @@
      <meta charset="UTF-8">
      <title>TEST JSON Server</title>
      <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+     <link rel="stylesheet" href="styles/main.css">
+     <!-- Custom CSS for the '4 Col Portfolio' Template -->
+     <link href="css/4-col-portfolio.css" rel="stylesheet">     
      <script src='javascript/jquery.min.js'></script>
      <script src='javascript/jquery.tmpl.min.js'></script>
 </head>
@@ -19,10 +22,12 @@
 				<img class="media-object dp img-circle" src="http://lorempixel.com/100/100/" style="width: 100px;height:100px;">
             </a>
             <div class="media-body">
-                <h4 class="media-heading">${subject}</h4>
-                <h5>${date}</h5>
-                <hr style="margin:8px auto">
+                <h4 class="media-heading"> ${subject} </h4>
 
+                <h5>${date}</h5>
+                <button id="subject" data-id="${id}" class="btn btn-danger">Read More</button>
+                <hr style="margin:8px auto">
+                
                 <span class="label label-default">HTML5/CSS3</span>
                 <span class="label label-default">jQuery</span>
                 <span class="label label-info">CakePHP</span>
